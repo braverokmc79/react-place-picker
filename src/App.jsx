@@ -5,6 +5,7 @@ import Modal from './components/Modal.jsx';
 import DeleteConfirmation from './components/DeleteConfirmation.jsx';
 import logoImg from './assets/logo.png';
 import { sortPlacesByDistance } from './loc.js';
+import Footer from './components/footer.jsx';
 
 const storedIds= JSON.parse(localStorage.getItem('selectedPlace')) || [];
 const storedPlaces = storedIds.map(id =>AVAILABLE_PLACES.find((place) => place.id === id));
@@ -96,6 +97,8 @@ function App() {
           onSelectPlace={handleSelectPlace}
         />
       </main>
+
+      <Footer  />
     </>
   );
 }

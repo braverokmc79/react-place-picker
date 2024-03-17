@@ -227,3 +227,16 @@ header p {
     transform: translateY(0);
   }
 }
+
+footer{
+  text-align: center;
+  margin: 0 auto;
+}
+footer a{
+  text-decoration: none;
+  color: #fff;
+
+}
+footer a:hover{
+  color: #8feeff;
+}
